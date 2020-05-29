@@ -18,6 +18,8 @@
         <!-- Font Awesome CDN -->
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
+        <!-- Custom Style -->
+        <link rel="stylesheet" href="style/style.css" type="text/css">
         <!-- Custom Script -->
         <script src="script/main.js"></script>
     </head>
@@ -119,6 +121,11 @@
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                                 </figure>
+                                <div class="overlay">
+                                    <a class="tile-icon" title="User Profile">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
                             </div>
                             <div class="card-content">
                                 <div class="media">
@@ -143,6 +150,11 @@
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                                 </figure>
+                                <div class="overlay">
+                                    <a class="tile-icon" title="User Profile">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="card-content">
@@ -169,6 +181,11 @@
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                                 </figure>
+                                <div class="overlay">
+                                    <a class="tile-icon" title="User Profile">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="card-content">
@@ -191,6 +208,11 @@
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
                                 </figure>
+                                <div class="overlay">
+                                    <a class="tile-icon" title="User Profile">
+                                        <i class="fas fa-search-plus"></i>
+                                    </a>
+                                </div>
                             </div>
 
                             <div class="card-content">
@@ -220,11 +242,45 @@
                             </header>
 
                             <section class="modal-card-body" id ="modal-card-body">
-                            <!-- Content ... -->
+                                <!-- Content ... -->
+                                <div class="columns">
+                                    <div class="column slideshowButton">
+                                        <button class="button is-medium" id="prevImage">
+                                            <span class="icon is-medium">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <!-- Images -->
+                                    <div class="column is-three-quarters">
+                                    <img src="media/proj1/bubble.gif" alt="pic" id="modal-card-image">
+                                    </div>
+                                    
+                                    <div class="column slideshowButton">
+                                        <button class="button is-medium" id="nextImage">
+                                            <span class="icon is-medium">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <section class="section">
+                                    <div class="container">
+                                        <h2 class="subtitle" id="modal-card-desc">
+                                        </h2>
+                                    </div>
+                                </section>
+
                             </section>
                             
                             <footer class="modal-card-foot">
-                                <button class="button is-success">View on GitHub</button>
+                                <a class="button is-success"  id="modalView">
+                                    <span>View on GitHub</span>
+                                    <span class="icon">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </span>
+                                </a>
                             </footer>
                         </div>
                     </div>
@@ -244,7 +300,7 @@
                     </h2>
                     <div class="field">
                         <button
-                            class="button is-medium modal-button"
+                            class="button is-medium "
                             data-target="modal-ter"
                             aria-haspopup="true"
                         >
