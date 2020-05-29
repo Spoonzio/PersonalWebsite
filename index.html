@@ -15,6 +15,9 @@
         <!-- jQuery CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
         <!-- Custom Script -->
         <script src="script/main.js"></script>
     </head>
@@ -45,19 +48,15 @@
             <!-- Links -->
             <div id="navbarLinks" class="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#about">
                         About
                     </a>
 
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#projects">
                         Projects
                     </a>
 
-                    <a class="navbar-item">
-                        Resume
-                    </a>
-
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#contact">
                         Contact
                     </a>
                 </div>
@@ -85,28 +84,22 @@
         </section>
 
         <!-- About me -->
-        <section class="section">
+        <section id = "about" class="section">
             <div class="container">
                 <h1 class="title">About Me</h1>
                 <h2 class="subtitle">
                     <div class="columns is-desktop">
                         <div class="column">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam in sodales eros. Aliquam aliquam
-                            placerat lacus, quis placerat massa tempus ac.
+                            I am a Computer System Technology student at British Columbia Institute of Technology. 
+                            Being a BCIT student, I have the opportunity to meet many like-minded students.
                         </div>
 
                         <div class="column">
-                            Donec at tincidunt turpis, vel fringilla velit.
-                            Morbi eu hendrerit purus, in suscipit ipsum. Mauris
-                            lobortis ex ut sagittis blandit.
+                            I am always curious about new technology and excited to expand my toolbox. I have self-learnt the foundation of programming with Python, which I then went on to learn Flask, a Python web framework.
                         </div>
 
                         <div class="column">
-                            Nam ligula nisl, dignissim vitae consectetur non,
-                            tincidunt quis elit. Morbi tempus ipsum ac neque
-                            feugiat suscipit. Donec malesuada nec nunc rhoncus
-                            finibus.
+                            Currently in my summer holiday, with the free time I have, I aim to learn Linux, C# and SQL. I also want to improve my knowledge in data structures and algorithms.
                         </div>
                     </div>
                 </h2>
@@ -114,14 +107,14 @@
         </section>
 
         <!-- Projects -->
-        <section class="section">
+        <section id = "project" class="section">
             <div class="container">
                 <h1 class="title">Projects</h1>
 
-                <!-- Proj Card Row 1 -->
+                <!-- Proj Cards-->
                 <div class="columns is-desktop">
                     <div class="column">
-                        <div class="card">
+                        <div class="card" id="proj1">
                             <div class="card-image">   
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -145,7 +138,7 @@
                     </div>
 
                     <div class="column">
-                        <div class="card">
+                        <div class="card" id="proj2">
                             <div class="card-image">   
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -171,7 +164,7 @@
                     </div>
 
                     <div class="column">
-                        <div class="card">
+                        <div class="card" id="proj3">
                             <div class="card-image">   
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -193,7 +186,7 @@
                     </div>
 
                     <div class="column">
-                        <div class="card">
+                        <div class="card" id="proj4">
                             <div class="card-image">   
                                 <figure class="image is-4by3">
                                     <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
@@ -216,12 +209,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <div id="projectModal" class="modal">
+                        <div class="modal-background"></div>
+
+                        <div class="modal-card">
+                            <header class="modal-card-head">
+                                <p class="modal-card-title" id = "modal-card-title"></p>
+                                <button class="delete" aria-label="close"></button>
+                            </header>
+
+                            <section class="modal-card-body" id ="modal-card-body">
+                            <!-- Content ... -->
+                            </section>
+                            
+                            <footer class="modal-card-foot">
+                                <button class="button is-success">View on GitHub</button>
+                            </footer>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact -->
-        <section class="hero is-primary">
+        <section id = "contact" class="hero is-primary">
             <div class="hero-body">
                 <div class="container">
                     <h1 class="title">Contact Me</h1>
@@ -236,15 +248,24 @@
                             data-target="modal-ter"
                             aria-haspopup="true"
                         >
-                            Send an Email
+                            <span class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span>Send an Email</span>
                         </button>
 
                         <button class="button is-medium">
-                            GitHub
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
                         </button>
 
                         <button class="button is-medium">
-                            LinkedIn
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
                         </button>
                     </div>
                 </div>
