@@ -14,28 +14,37 @@ const projects ={
     "proj2" : {
         "name" : "RecipeWeb",
         "images" : [
-
+            "media/proj2/homepage.gif",
+            "media/proj2/search.gif",
+            "media/proj2/recipe.png",
+            "media/proj2/login.png",
+            "media/proj2/saved.png"
         ],
-        "desc" : "",
-        "link" : ""
+        "desc" : "A web app with a local search engine for dishes and drinks recipes, include an account system to save recipes.",
+        "link" : "https://github.com/Spoonzio/RecipeWeb"
     },
 
     "proj3" : {
-        "name" : "",
+        "name" : "Under Construction",
         "images" : [
 
         ],
-        "desc" : "",
+        "desc" : "My summer project!",
         "link" : ""
     },
 
     "proj4" : {
-        "name" : "",
+        "name" : "LiveMood",
         "images" : [
-
+            "media/proj4/landing.gif",
+            "media/proj4/dashboard.png",
+            "media/proj4/survey.png",
+            "media/proj4/group.png",
+            "media/proj4/suggest.png"
         ],
-        "desc" : "",
-        "link" : ""
+        "desc" : "A web application, made to track the user's mood, receive activity suggestions based on their mood. It is a group project for the 5-week CST course COMP 2800, at BCIT."
+            + "<br><br>" + "I was involved in the core data handling, from and to, between database and various other features / pages, eg: charts, suggestions and surveys.",
+        "link" : "https://github.com/RADeveloping/COMP-2800-Team-BBY-09-LiveMood"
     }
 };
 
@@ -55,7 +64,7 @@ $(document).ready(function () {
 
         // Form modal
         let projectCard =
-            event.srcElement.parentElement.parentElement.parentElement;
+            event.srcElement.parentElement.parentElement;
         makemodal(projectCard);
     });
 
@@ -74,6 +83,8 @@ $(document).ready(function () {
 
 // Build modal
 function makemodal(projectCard) {
+    console.log(projectCard)
+
     let projectOrder = projectCard.id;
     let projObj = projects[projectOrder];
     let imgCount = projObj["images"].length;
