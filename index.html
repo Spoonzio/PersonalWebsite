@@ -1,390 +1,336 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Jason Yixuan Pan</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Bulma Stylesheet -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css"
-        />
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Jason Yixuan Pan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- jQuery CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bulma Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css" />
 
-        <!-- Font Awesome CDN -->
-        <link
-            rel="stylesheet"
-            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-            crossorigin="anonymous"
-        />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="media/favicon/favicon.ico" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-        <!-- Custom Style -->
-        <link rel="stylesheet" href="style/style.css" type="text/css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="media/favicon/favicon.ico" />
 
-        <!-- Custom Script -->
-        <script src="script/main.js"></script>
-    </head>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="style/style.css" type="text/css" />
 
-    <body>
-        <nav
-            class="navbar is-fixed-top"
-            role="navigation"
-            aria-label="main navigation"
-        >
-            <!-- Name -->
-            <div class="navbar-brand">
-                Jason Pan
+    <!-- Custom Script -->
+    <script src="script/main.js"></script>
+</head>
 
-                <a
-                    role="button"
-                    class="navbar-burger burger"
-                    aria-label="menu"
-                    aria-expanded="false"
-                    data-target="navbarLinks"
-                >
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+<body>
+    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <!-- Name -->
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarLinks">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <!-- Links -->
+        <div id="navbarLinks" class="navbar-menu">
+            <div class="navbar">
+                <a class="navbar-item" href="#about">
+                    About
+                </a>
+
+                <a class="navbar-item" href="#projects">
+                    Projects
+                </a>
+
+                <a class="navbar-item" href="#contact">
+                    Contact
                 </a>
             </div>
+        </div>
+    </nav>
 
-            <!-- Links -->
-            <div id="navbarLinks" class="navbar-menu">
-                <div class="navbar-end">
-                    <a class="navbar-item" href="#about">
-                        About
-                    </a>
-
-                    <a class="navbar-item" href="#projects">
-                        Projects
-                    </a>
-
-                    <a class="navbar-item" href="#contact">
-                        Contact
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Profile -->
-        <section class="hero is-medium">
-            <div class="hero-body">
-                <div class="container">
-                    <!-- Portrait -->
-                    <figure class="image is-128x128">
-                        <img
-                            class="is-rounded"
-                            src="https://media-exp1.licdn.com/dms/image/C5603AQHv9jWOGFaZyQ/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=CL6VJeanQnSs5ayWM5pkSeb2ySe5qIQu9drw8uX-T0o"
-                        />
-                    </figure>
-
-                    <h1 class="title is-1">Jason Yixuan Pan</h1>
-                    <h2 class="subtitle">
-                        Always curious.
-                    </h2>
-                </div>
-            </div>
-        </section>
-
-        <!-- About me -->
-        <section id="about" class="section">
+    <!-- Profile -->
+    <section class="hero is-medium" id="profile">
+        <div class="hero-body">
             <div class="container">
-                <h1 class="title">About Me</h1>
+                <!-- Portrait -->
+                <figure class="image is-128x128">
+                    <img class="is-rounded"
+                        src="https://media-exp1.licdn.com/dms/image/C5603AQHv9jWOGFaZyQ/profile-displayphoto-shrink_200_200/0?e=1596067200&v=beta&t=CL6VJeanQnSs5ayWM5pkSeb2ySe5qIQu9drw8uX-T0o" />
+                </figure>
+
+                <h1 class="title is-1">Jason Yixuan Pan</h1>
                 <h2 class="subtitle">
-                    <div class="columns is-desktop">
-                        <div class="column">
-                            I am a Computer System Technology student at British
-                            Columbia Institute of Technology. Being a BCIT
-                            student, I have the opportunity to meet many
-                            like-minded students.
-                        </div>
-
-                        <div class="column">
-                            I am always curious about new technology and excited
-                            to expand my toolbox. I have self-learnt the
-                            foundation of programming with Python, which I then
-                            went on to learn Flask, a Python web framework.
-                        </div>
-
-                        <div class="column">
-                            Currently in my summer holiday, with the free time I
-                            have, I aim to learn Linux, C# and SQL. I also want
-                            to improve my knowledge in data structures and
-                            algorithms.
-                        </div>
-                    </div>
+                    Always curious.
                 </h2>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Projects -->
-        <section id="project" class="section">
-            <div class="container">
-                <h1 class="title">My Projects</h1>
-
-                <!-- Proj Cards-->
+    <!-- About me -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1 class="title">About Me</h1>
+            <h2 class="subtitle">
                 <div class="columns is-desktop">
-                    <!-- Project 1 -->
                     <div class="column">
-                        <div class="card" id="proj1">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img
-                                        src="media/proj1/bubble.gif"
-                                        alt="Placeholder image"
-                                    />
-                                </figure>
-                                <div class="overlay">
-                                    <a class="tile-icon" title="User Profile">
-                                        <i class="fas fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">
-                                            Sort-And-Shuffle
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    <span class="tag is-info">Python</span>
-                                    <span class="tag is-info">PyQT</span>
-                                </div>
-                            </div>
-                        </div>
+                        I am a Computer System Technology student at British
+                        Columbia Institute of Technology. Being a BCIT
+                        student, I have the opportunity to meet many
+                        like-minded students.
                     </div>
 
-                    <!-- Project 2 -->
                     <div class="column">
-                        <div class="card" id="proj2">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img
-                                        src="media/proj2/cover.png"
-                                        alt="Placeholder image"
-                                    />
-                                </figure>
-                                <div class="overlay">
-                                    <a class="tile-icon" title="User Profile">
-                                        <i class="fas fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">RecipeWeb</p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    <span class="tag is-info">Python</span>
-                                    <span class="tag is-info">Flask</span>
-                                    <span class="tag">SQL</span>
-                                    <span class="tag">HTML</span>
-                                    <span class="tag">CSS</span>
-                                </div>
-                            </div>
-                        </div>
+                        I am always curious about new technology and excited
+                        to expand my toolbox. I have self-learnt the
+                        foundation of programming with Python, which I then
+                        went on to learn Flask, a Python web framework.
                     </div>
 
-                    <!-- Project 3 -->
                     <div class="column">
-                        <div class="card" id="proj3">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img
-                                        src="https://bulma.io/images/placeholders/1280x960.png"
-                                        alt="Placeholder image"
-                                    />
-                                </figure>
-                                <div class="overlay">
-                                    <a class="tile-icon" title="User Profile">
-                                        <i class="fas fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">
-                                            Under Construction
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    <span class="tag">Tech</span>
-                                </div>
-                            </div>
-                        </div>
+                        Currently in my summer holiday, with the free time I
+                        have, I aim to learn Linux, C# and SQL. I also want
+                        to improve my knowledge in data structures and
+                        algorithms.
                     </div>
+                </div>
+            </h2>
+        </div>
+    </section>
 
-                    <!-- Project 4 -->
-                    <div class="column">
-                        <div class="card" id="proj4">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img
-                                        src="media/proj4/cover.png"
-                                        alt="Placeholder image"
-                                    />
-                                </figure>
-                                <div class="overlay">
-                                    <a class="tile-icon" title="User Profile">
-                                        <i class="fas fa-search-plus"></i>
-                                    </a>
-                                </div>
-                            </div>
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h1 class="title">My Projects</h1>
 
-                            <div class="card-content">
-                                <div class="media">
-                                    <div class="media-content">
-                                        <p class="title is-4">LiveMood</p>
-                                    </div>
-                                </div>
-
-                                <div class="content">
-                                    <span class="tag is-info">JavaScript</span>
-                                    <span class="tag">Firebase</span>
-                                    <span class="tag">HTML</span>
-                                    <span class="tag">CSS</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="projectModal" class="modal">
-                        <div class="modal-background"></div>
-
-                        <div class="modal-card">
-                            <header class="modal-card-head">
-                                <p
-                                    class="modal-card-title"
-                                    id="modal-card-title"
-                                ></p>
-                                <button
-                                    class="delete"
-                                    aria-label="close"
-                                ></button>
-                            </header>
-
-                            <section
-                                class="modal-card-body"
-                                id="modal-card-body"
-                            >
-                                <!-- Content ... -->
-                                <div class="columns">
-                                    <div class="column slideshowButton">
-                                        <button
-                                            class="button is-medium"
-                                            id="prevImage"
-                                        >
-                                            <span class="icon is-medium">
-                                                <i
-                                                    class="fas fa-chevron-left"
-                                                ></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                    <!-- Images -->
-                                    <div class="column is-three-quarters">
-                                        <img
-                                            src="media/proj1/bubble.gif"
-                                            alt="pic"
-                                            id="modal-card-image"
-                                        />
-                                    </div>
-
-                                    <div class="column slideshowButton">
-                                        <button
-                                            class="button is-medium"
-                                            id="nextImage"
-                                        >
-                                            <span class="icon is-medium">
-                                                <i
-                                                    class="fas fa-chevron-right"
-                                                ></i>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <section class="section">
-                                    <div class="container">
-                                        <h2
-                                            class="subtitle"
-                                            id="modal-card-desc"
-                                        ></h2>
-                                    </div>
-                                </section>
-                            </section>
-
-                            <footer class="modal-card-foot">
-                                <a class="button is-success" id="modalView">
-                                    <span>View on GitHub</span>
-                                    <span class="icon">
-                                        <i class="fas fa-external-link-alt"></i>
-                                    </span>
+            <!-- Proj Cards-->
+            <div class="columns is-desktop">
+                <!-- Project 1 -->
+                <div class="column">
+                    <div class="card" id="proj1">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="media/proj1/bubble.gif" alt="Project 1 image" />
+                            </figure>
+                            <div class="overlay" data-project="proj1">
+                                <a class="tile-icon" title="User Profile" data-project="proj1">
+                                    <i class="fas fa-search-plus" data-project="proj1"></i>
                                 </a>
-                            </footer>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        Sort-And-Shuffle
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <span class="tag is-info">Python</span>
+                                <span class="tag is-info">PyQT</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Contact -->
-        <section id="contact" class="hero is-primary">
-            <div class="hero-body">
-                <div class="container">
-                    <h1 class="title">Contact Me</h1>
+                <!-- Project 2 -->
+                <div class="column">
+                    <div class="card" id="proj2">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="media/proj2/cover.png" alt="Project 2 image" />
+                            </figure>
+                            <div class="overlay" data-project="proj2">
+                                <a class="tile-icon" title="User Profile" data-project="proj2">
+                                    <i class="fas fa-search-plus" data-project="proj2"></i>
+                                </a>
+                            </div>
+                        </div>
 
-                    <!-- Platforms -->
-                    <h2 class="subtitle">
-                        Stay Connected
-                    </h2>
-                    <div class="field">
-                        <button
-                            class="button is-medium"
-                            data-target="modal-ter"
-                            aria-haspopup="true"
-                        >
-                            <span class="icon">
-                                <i class="fas fa-envelope"></i>
-                            </span>
-                            <span>Send an Email</span>
-                        </button>
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">RecipeWeb</p>
+                                </div>
+                            </div>
 
-                        <button class="button is-medium">
-                            <span class="icon">
-                                <i class="fab fa-github"></i>
-                            </span>
-                            <span>GitHub</span>
-                        </button>
+                            <div class="content">
+                                <span class="tag is-info">Python</span>
+                                <span class="tag is-info">Flask</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <button class="button is-medium">
-                            <span class="icon">
-                                <i class="fab fa-linkedin"></i>
-                            </span>
-                            <span>LinkedIn</span>
-                        </button>
+                <!-- Project 3 -->
+                <div class="column">
+                    <div class="card" id="proj3">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="media/proj3/cover.gif" alt="Project 3 image" />
+                            </figure>
+                            <div class="overlay" data-project="proj3">
+                                <a class="tile-icon" title="User Profile" data-project="proj3">
+                                    <i class="fas fa-search-plus" data-project="proj3"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">
+                                        Under Construction
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <span class="tag">Tech</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="column">
+                    <div class="card" id="proj4">
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="media/proj4/cover.png" alt="Project 4 image" />
+
+                            </figure>
+                            <div class="overlay" data-project="proj4">
+                                <a class="tile-icon" title="See More" data-project="proj4">
+                                    <i class="fas fa-search-plus" data-project="proj4"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">LiveMood</p>
+                                </div>
+                            </div>
+
+                            <div class="content">
+                                <span class="tag is-info">JavaScript</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal window -->
+                <div id="projectModal" class="modal">
+                    <div class="modal-background"></div>
+
+                    <div class="modal-card">
+                        <header class="modal-card-head">
+                            <p class="modal-card-title" id="modal-card-title"></p>
+                            <button class="delete" aria-label="close"></button>
+                        </header>
+
+                        <section class="modal-card-body" id="modal-card-body">
+                            <!-- Content ... -->
+                            <div>
+                                <img src="" alt="pic" id="modal-card-image" />
+                            </div>
+
+                            <div class="columns">
+                                <!-- Images -->
+                                <div class="column slideshowButton">
+                                    <button class="button is-medium" id="prevImage">
+                                        <span class="icon is-medium">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </span>
+                                    </button>
+
+                                    <button class="button is-medium" id="nextImage">
+                                        <span class="icon is-medium">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <section class="section" id="modal-section">
+                                <div class="container" id="modal-card-desc-container">
+                                    <h2 class="subtitle" id="modal-card-desc"></h2>
+                                </div>
+                            </section>
+                        </section>
+
+                        <footer class="modal-card-foot">
+                            <a class="button is-success is-medium" id="modalView" target="_blank">
+                                <span class="icon">
+                                    <i class="fab fa-github"></i>
+                                </span>
+                                <span>View on GitHub </span>
+                                <span class="icon">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </span>
+                            </a>
+                        </footer>
                     </div>
                 </div>
             </div>
-        </section>
-    </body>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="hero is-primary">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">Contact Me</h1>
+
+                <!-- Platforms -->
+                <h2 class="subtitle">
+                    Stay Connected
+                </h2>
+                <div class="field">
+                    <a class="button is-medium" href="mailto:ypan35@my.bcit.ca">
+                        <span class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </span>
+                        <span>Send an Email</span>
+
+                    </a>
+
+                    <a class="button is-medium" href="https://github.com/Spoonzio">
+                        <span class="icon">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        <span>GitHub</span>
+
+                    </a>
+
+                    <a class="button is-medium" href="https://linkedin.com/in/yixuan-pan">
+                        <span class="icon">
+                            <i class="fab fa-linkedin"></i>
+                        </span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>

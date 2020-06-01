@@ -27,7 +27,7 @@ const projects ={
     "proj3" : {
         "name" : "Under Construction",
         "images" : [
-
+            "media/proj3/cover.gif"
         ],
         "desc" : "My summer project!",
         "link" : ""
@@ -63,8 +63,7 @@ $(document).ready(function () {
         $("#projectModal").addClass("is-active");
 
         // Form modal
-        let projectCard =
-            event.srcElement.parentElement.parentElement;
+        let projectCard = event.srcElement;
         makemodal(projectCard);
     });
 
@@ -85,7 +84,7 @@ $(document).ready(function () {
 function makemodal(projectCard) {
     console.log(projectCard)
 
-    let projectOrder = projectCard.id;
+    let projectOrder = projectCard.getAttribute("data-project"); ;
     let projObj = projects[projectOrder];
     let imgCount = projObj["images"].length;
     let imgCounter = 0;
@@ -96,19 +95,20 @@ function makemodal(projectCard) {
 
     // Image
     let modalGallery = document.getElementById("modal-card-image");
-    modalGallery.setAttribute("src", projObj["images"][imgCounter % imgCount]);
+    modalGallery.setAttribute("src", projObj["images"][mod(imgCounter, imgCount)]);
 
     let prevImg = document.getElementById("prevImage");
     prevImg.addEventListener("click", function(){
         imgCounter--;
-        console.log(imgCounter)
-        modalGallery.setAttribute("src", projObj["images"][imgCounter % imgCount]);
+        console.log(imgCounter +"%"+ imgCount +"=" + (mod(imgCounter, imgCount)))
+        modalGallery.setAttribute("src", projObj["images"][mod(imgCounter, imgCount)]);
     });
 
     let nextImg = document.getElementById("nextImage");
-    prevImg.addEventListener("click", function(){
+    nextImg.addEventListener("click", function(){
         imgCounter++;
-        modalGallery.setAttribute("src", projObj["images"][imgCounter % imgCount]);
+        console.log(imgCounter +"%"+ imgCount +"=" + (mod(imgCounter, imgCount)))
+        modalGallery.setAttribute("src", projObj["images"][mod(imgCounter, imgCount)]);
     });
 
 
@@ -120,4 +120,13 @@ function makemodal(projectCard) {
     let modalViewButt = document.getElementById("modalView");
     modalViewButt.setAttribute("href", projObj["link"]);
     modalViewButt.setAttribute("target", "_blank");
+
+
 }
+
+// Modular function using (%) remainder operator.
+function mod(n, m) {
+    return ((n % m) + m) % m;
+}
+
+

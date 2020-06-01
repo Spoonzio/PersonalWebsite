@@ -1,6 +1,66 @@
+/* Page */
+html {
+    scroll-behavior: smooth;
+}
+/* Navbar */
+.navbar-menu{
+    justify-content: center;
+}
+
+
+/* Profile */
+@media only screen and (min-width: 1088px) {
+    #profile .container {
+        text-align: center;
+    }
+    
+    .image.is-128x128{
+        height: 233px;
+        width: 233px;
+        margin-bottom: 100px;
+    }
+    
+    #profile .container figure {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    div.hero-body{
+        padding-bottom: 1rem ;
+    }
+}
+
+
+/* Modal */
 .slideshowButton{
-    margin-top: auto;
-    margin-bottom: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+#modal-card-desc-container{
+    max-width: 100%;
+}
+
+#modal-card-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    height:auto;
+}
+.modal-card, .modal-content{
+    width: 800px;
+}
+
+#modal-section{
+    padding: 2em 1em;
+    text-align: center;
+}
+
+footer.modal-card-foot{
+    justify-content: center;
 }
 
 /* Overlay for Projec tiles */
@@ -34,6 +94,10 @@
 
 .fa-search-plus:hover {
     color: #eee;
+}
+
+#contact{
+    margin-top: 3rem;
 }
 
 /* red: #e06c75 */
